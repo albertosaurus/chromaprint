@@ -34,7 +34,7 @@ module Chromaprint
     end
 
     # Calculate hamming distance between 32 bit integer arrays.
-    # It's sad to say but according to StackOverflaw it's the fastest
+    # It's sad to say but according to Stackoverflow it's the fastest
     # way to calculate hamming distance between 2 integers in ruby:
     #   (a^b).to_s(2).count("1")
     #
