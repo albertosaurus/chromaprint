@@ -49,6 +49,12 @@ fingerprint1.raw  # => [294890785, 328373552, 315802880, 303481088, ...]
 fingerprint1.compare(fingerprint2)  # => 0.93231
 ```
 
+## Run tests
+
+```sh
+rake spec
+```
+
 ## Credits
 
 * [Sergey Potapov](https://github.com/greyblake)

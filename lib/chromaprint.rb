@@ -21,4 +21,11 @@ module Chromaprint
 
   # Chromaprint works with 16 bit samples
   BYTES_PER_SAMPLE = 2
+
+  # Get version of Chromaprint library
+  #
+  # @return [String] version
+  def self.lib_version
+    Lib.chromaprint_get_version
+  end
 end

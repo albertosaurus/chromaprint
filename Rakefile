@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "chromaprint"
   gem.homepage = "http://github.com/greyblake/chromaprint"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Port of Chromaprint library to Ruby}
+  gem.description = %Q{A client-side library that implements a custom algorithm for extracting fingerprints from any audio source}
   gem.email = "blake131313@gmail.com"
   gem.authors = ["Potapov Sergey"]
   # dependencies defined in Gemfile
