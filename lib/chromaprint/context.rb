@@ -1,5 +1,16 @@
 module Chromaprint
+  # Calculates fingerprints of audio data.
+  #
+  # @example
+  #  chromaprint = Chromaprint::Context.new(44100, 1)
+  #  data = File.binread('song.wav')
+  #  fingerprint = chromaprint.get_fingerprint(data)
   class Context
+    # @param rate [Integer] sample rate of audio
+    # @param num_channels [Integer] number of channels (1 or 2)
+    # @param algorithm [Integer] specify algorithm to be used to Chromaprint
+    #   library. Must be {ALGORITHM_TEST1}, {ALGORITHM_TEST2} or
+    #   {ALGORITHM_TEST3}.
     def initialize(rate, num_channels, algorithm = ALGORITHM_DEFAULT)
       @rate         = rate
       @num_channels = num_channels
@@ -7,6 +18,12 @@ module Chromaprint
     end
 
 
+    # Calculate raw and compressed fingerprints of  the audio data.
+    #
+    #
+    # @param data [String] raw audio data preseted by 16-bit signed integers
+    #
+    # @return [Chromaprint::Fingerprint]
     def get_fingerprint(data)
       # Allocate memory for context and initialize
       p_context = Lib.chromaprint_new(@algorithm)

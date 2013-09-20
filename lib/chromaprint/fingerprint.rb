@@ -1,9 +1,16 @@
 module Chromaprint
+  # Contains compressed and raw fingerprints and provides method to compare
+  # them against other fingerprints.
   class Fingerprint
     # Number of bits in one item of raw fingerprint
     BITS_PER_RAW_ITEM = 32
 
-    attr_reader :compressed, :raw
+    # @attr_reader compressed [String] compressed fingerprints
+    attr_reader :compressed
+
+    # @attr_reader raw [Array<Integer>] raw fingerprints,
+    #   array of 32-bit integers returned by native C library.
+    attr_reader :raw
 
     # @param compressed [String] compressed fingerprint
     # @param raw [Array<Integer>] raw fingerprint

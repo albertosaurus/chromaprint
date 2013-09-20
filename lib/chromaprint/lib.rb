@@ -1,6 +1,6 @@
 module Chromaprint
   # Port chromaprint API functions. To get their detailed documentation please
-  # see +chromaprint.h+.
+  # see +chromaprint.h+ of the original C/C++ library.
   module Lib
     extend FFI::Library
     ffi_lib 'chromaprint'
