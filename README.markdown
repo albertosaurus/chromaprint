@@ -18,7 +18,7 @@ apt-get install libchromaprint-dev
 ### Mac
 
 ```
-Waiting to be added my somebody who uses Mac
+brew install chromaprint
 ```
 
 ## Usage
