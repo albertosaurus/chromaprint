@@ -32,11 +32,12 @@ context1 = Chromaprint::Context.new(44100, 1)
 # do it yourself.
 data1 = File.binread('/1.wav')
 
-# Get fingerprint from data.
+# Create context for rate=22050 and channel=2 and get fingerprint
+context2 = Chromaprint::Context.new(22050, 1)
 fingerprint1 = context1.get_fingerprint(data1)
 
-# Create context for rate=22050 and channel=2.
-context2 = Chromaprint::Context.new(22050, 2)
+# Get fingerprunt of another audio
+context2 = Chromaprint::Context.new(44100, 2)
 fingerprint2 = context2.get_fingerprint(File.binread('/2.wav')
 
 # Compressed fingerprint, returned by chromaprint_get_fingerprint() C function.
