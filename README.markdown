@@ -2,7 +2,7 @@
 
 Port of [Chromaprint](http://acoustid.org/chromaprint) C/C++ library to Ruby.
 
-> It's a client-side library that implements a custom algorithm for extracting fingerprints from any audio source.
+> A client-side library that implements a custom algorithm for extracting fingerprints from any audio source.
 
 
 ## Dependencies
@@ -17,7 +17,8 @@ apt-get install libchromaprint-dev
 
 ### Mac
 
-```
+```sh
+# At the time of this writing, chromaprint is unavailable in MacPorts or Fink:
 brew install chromaprint
 ```
 
@@ -33,11 +34,11 @@ context1 = Chromaprint::Context.new(44100, 1)
 data1 = File.binread('/1.wav')
 
 # Create context for rate=22050 and channel=2 and get fingerprint
-context2 = Chromaprint::Context.new(22050, 1)
+context2     = Chromaprint::Context.new(22050, 1)
 fingerprint1 = context1.get_fingerprint(data1)
 
-# Get fingerprunt of another audio
-context2 = Chromaprint::Context.new(44100, 2)
+# Get fingerprint of another audio
+context2     = Chromaprint::Context.new(44100, 2)
 fingerprint2 = context2.get_fingerprint(File.binread('/2.wav')
 
 # Compressed fingerprint, returned by chromaprint_get_fingerprint() C function.
