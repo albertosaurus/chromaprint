@@ -42,6 +42,8 @@ module Chromaprint
     # way to calculate hamming distance between 2 integers in ruby:
     #   (a^b).to_s(2).count("1")
     #
+    #   ref: http://stackoverflow.com/questions/6395165/most-efficient-way-to-calculate-hamming-distance-in-ruby/6397116#6397116
+    #
     # If array sizes are different we add difference to the distance.
     #
     # @param raw1 [Array<Integer>] array of 32 bit integers.
