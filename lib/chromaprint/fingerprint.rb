@@ -1,5 +1,5 @@
 module Chromaprint
-  # Contains compressed and raw fingerprints and provides method to compare
+  # Contains compressed and raw fingerprints and provides a method to compare
   # them against other fingerprints.
   class Fingerprint
     # Number of bits in one item of raw fingerprint
@@ -19,16 +19,16 @@ module Chromaprint
       @raw        = raw
     end
 
-    # Compare fingerprint against another fingerprint.
+    # Compare a fingerprint against another fingerprint.
     #
     # @param fingerprint [Chromaprint::Fingerprint] fingerprint to compare against
     #
     # @return [Float] float in 0..1 range where 1 is 100% match
     def compare(fingerprint)
       max_raw_size = [@raw.size, fingerprint.raw.size].max
-      bit_size = max_raw_size * BITS_PER_RAW_ITEM
+      bit_size     = max_raw_size * BITS_PER_RAW_ITEM
 
-      distance = hamming_distance(@raw, fingerprint.raw)
+      distance     = hamming_distance(@raw, fingerprint.raw)
 
       1 - distance.to_f / bit_size
     end

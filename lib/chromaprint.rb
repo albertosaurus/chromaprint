@@ -4,8 +4,8 @@ require 'chromaprint/lib'
 require 'chromaprint/context'
 require 'chromaprint/fingerprint'
 
-# Chromaprint is originally written in C/C++ library which allows to calculate
-# fingerprints of audio data. This is its port for Ruby language.
+# Chromaprint is originally written in C/C++, a library which provides tools
+# to calculate fingerprints of audio data. This is its port for the Ruby language.
 module Chromaprint
   # All algorithm constants are taken from +chromaprint.h+
   ALGORITHM_TEST1 = 0

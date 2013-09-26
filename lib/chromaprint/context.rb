@@ -3,7 +3,7 @@ module Chromaprint
   #
   # @example
   #  chromaprint = Chromaprint::Context.new(44100, 1)
-  #  data = File.binread('song.wav')
+  #  data        = File.binread('song.wav')
   #  fingerprint = chromaprint.get_fingerprint(data)
   class Context
     # @param rate [Integer] sample rate of audio
