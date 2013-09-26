@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Potapov Sergey"]
+  s.authors = ["Potapov Sergey", "TMX Credit"]
   s.date = "2013-09-20"
   s.description = "A client-side library that implements a custom algorithm for extracting fingerprints from any audio source"
-  s.email = "blake131313@gmail.com"
+  s.email = ["rubygems@tmxcredit.com", "blake131313@gmail.com"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.markdown"
