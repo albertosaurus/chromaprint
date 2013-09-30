@@ -13,9 +13,8 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "chromaprint"
-  gem.homepage = "http://github.com/greyblake/chromaprint"
+  gem.homepage = "https://github.com/TMXCredit/chromaprint"
   gem.license = "MIT"
   gem.summary = %Q{Port of Chromaprint library to Ruby}
   gem.description = %Q{A client-side library that implements a custom algorithm for extracting fingerprints from any audio source}
