@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "chromaprint"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["TMX Credit", "Potapov Sergey"]
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
     "lib/chromaprint/fingerprint.rb",
     "lib/chromaprint/lib.rb"
   ]
-  s.homepage = "http://github.com/greyblake/chromaprint"
+  s.homepage = "https://github.com/TMXCredit/chromaprint"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
