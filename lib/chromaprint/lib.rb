@@ -38,7 +38,7 @@ module Chromaprint
     # int chromaprint_get_algorithm(ChromaprintContext *ctx)
     #
     # @note
-    #   In Debian Squeeze chromaprint.so (version 6.0.0) doesn't have
+    #   In Debian Wheezy chromaprint.so (version 6.0.0) doesn't have
     #   chromaprint_get_algorithm() function. So we comment it out to not
     #   raise exception on loading.
     #
