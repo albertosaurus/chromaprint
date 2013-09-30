@@ -8,41 +8,26 @@ Gem::Specification.new do |s|
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Potapov Sergey"]
-  s.date = "2013-09-26"
+  s.authors = ["TMX Credit", "Potapov Sergey"]
+  s.date = "2013-09-30"
   s.description = "A client-side library that implements a custom algorithm for extracting fingerprints from any audio source"
-  s.email = "blake131313@gmail.com"
+  s.email = ["rubygems@tmxcredit.com", "blake131313@gmail.com"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.markdown"
   ]
   s.files = [
-    ".document",
-    ".rspec",
-    ".ruby-gemset",
-    ".ruby-version",
-    "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.markdown",
-    "Rakefile",
-    "VERSION",
-    "chromaprint.gemspec",
     "lib/chromaprint.rb",
     "lib/chromaprint/context.rb",
     "lib/chromaprint/fingerprint.rb",
-    "lib/chromaprint/lib.rb",
-    "spec/integration/chromaprint_spec.rb",
-    "spec/integration/fixtures/a.wav",
-    "spec/integration/fixtures/b.wav",
-    "spec/lib/chromaprint/fingerprint_spec.rb",
-    "spec/lib/chromaprint_spec.rb",
-    "spec/spec_helper.rb"
+    "lib/chromaprint/lib.rb"
   ]
   s.homepage = "http://github.com/greyblake/chromaprint"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.7"
+  s.rubygems_version = "2.0.3"
   s.summary = "Port of Chromaprint library to Ruby"
 
   if s.respond_to? :specification_version then

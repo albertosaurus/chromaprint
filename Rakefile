@@ -19,9 +19,9 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{Port of Chromaprint library to Ruby}
   gem.description = %Q{A client-side library that implements a custom algorithm for extracting fingerprints from any audio source}
-  gem.email = "blake131313@gmail.com"
-  gem.authors = ["Potapov Sergey"]
-  # dependencies defined in Gemfile
+  gem.authors = ['TMX Credit'            , 'Potapov Sergey']
+  gem.email   = ['rubygems@tmxcredit.com', 'blake131313@gmail.com']
+  gem.files = Dir["lib/**/*"] + Dir['README.markdown', 'LICENSE.txt']
 end
 Jeweler::RubygemsDotOrgTasks.new
 
