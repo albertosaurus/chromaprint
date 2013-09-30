@@ -1,8 +1,11 @@
 # Chromaprint
 
+[![Build Status](https://secure.travis-ci.org/TMXCredit/chromaprint.png)](http://travis-ci.org/TMXCredit/chromaprint)
+
 Port of [Chromaprint](http://acoustid.org/chromaprint) C/C++ library to Ruby.
 
 > A client-side library that implements a custom algorithm for extracting fingerprints from any audio source.
+
 
 
 ## Dependencies
